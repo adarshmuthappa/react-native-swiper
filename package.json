@@ -27,5 +27,9 @@
   },
   "peerDependencies": {
     "react": ">= 0.10"
+  },
+  "dependencies": {
+    "react-native-clone-referenced-element": "^1.0.0",
+    "react-timer-mixin": "^0.13.3"
   }
 }
