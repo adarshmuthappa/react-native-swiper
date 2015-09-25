@@ -1,11 +1,11 @@
 {
-  "name": "react-native-swiper",
+  "name": "react-native-swiper-fork",
   "keywords": [
     "react-component",
     "react-native",
     "ios"
   ],
-  "version": "1.3.0",
+  "version": "2.0.0",
   "description": "Swiper component for React Native.",
   "main": "dist/index.js",
   "scripts": {
@@ -14,14 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/leecade/react-native-swiper.git"
+    "url": "git+https://github.com/manandmoon/react-native-swiper.git"
   },
-  "author": "",
+  "author": "Mike Grabowski <grabbou@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/leecade/react-native-swiper/issues"
+    "url": "https://github.com/manandmoon/react-native-swiper/issues"
   },
-  "homepage": "https://github.com/leecade/react-native-swiper#readme",
+  "homepage": "https://github.com/manandmoon/react-native-swiper#readme",
   "devDependencies": {
     "babel": "^5.1.11"
   },
