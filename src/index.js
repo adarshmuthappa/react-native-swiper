@@ -9,6 +9,7 @@ import React, {
   Text,
   View,
   ScrollView,
+  Dimensions,
   TouchableOpacity,
 } from 'react-native'
 
@@ -18,8 +19,9 @@ import React, {
 // the component is unmounted, you risk the callback
 // throwing an exception.
 import TimerMixin from 'react-timer-mixin'
-import Dimensions from 'Dimensions'
+import cloneElement from 'react-native-clone-referenced-element';
 
+let onlyChild = React.Children.only;
 let { width, height } = Dimensions.get('window')
 
 /**
@@ -326,8 +328,9 @@ export default React.createClass({
 
     let dots = []
     for(let i = 0; i < this.state.total; i++) {
+
       dots.push(i === this.state.index
-        ? (this.props.activeDot || <View style={{
+        ? (cloneElement(onlyChild(this.props.activeDot), {key: i}) || <View key={i} style={{
             backgroundColor: '#007aff',
             width: 8,
             height: 8,
@@ -337,7 +340,7 @@ export default React.createClass({
             marginTop: 3,
             marginBottom: 3,
           }} />)
-        : (this.props.dot || <View style={{
+        : (cloneElement(onlyChild(this.props.dot), {key: i}) || <View key={i} style={{
             backgroundColor:'rgba(0,0,0,.2)',
             width: 8,
             height: 8,
