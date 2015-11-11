@@ -5,7 +5,7 @@
 
 ![logo](http://i.imgur.com/P4cRUgD.png)
 
-**This is a fork with all the fixes and PRs getting merged from upstream. Will be merged with upstream after original author is finally back again**
+**This is a fork merged with https://github.com/manandmoon/react-native-swiper with an additional prop for the scrollview which ensures the keyboard dismissed on swipe**
 
 > The best Swiper component for React Native.
 
