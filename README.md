@@ -1,13 +1,13 @@
-# react-native-swiper
+# react-native-swiper-fork
 
-[![npm version](http://img.shields.io/npm/v/react-native-swiper.svg?style=flat-square)](https://npmjs.org/package/react-native-swiper "View this project on npm")
-[![npm version](http://img.shields.io/npm/dm/react-native-swiper.svg?style=flat-square)](https://npmjs.org/package/react-native-swiper "View this project on npm")
-[![Issue Stats](http://issuestats.com/github/leecade/react-native-swiper/badge/pr?style=flat-square)](https://github.com/leecade/react-native-swiper/pulls?q=is%3Apr+is%3Aclosed)
-[![Issue Stats](http://issuestats.com/github/leecade/react-native-swiper/badge/issue?style=flat-square)](https://github.com/leecade/react-native-swiper/issues?q=is%3Aissue+is%3Aclosed)
+[![npm version](http://img.shields.io/npm/v/react-native-swiper-fork.svg?style=flat-square)](https://npmjs.org/package/react-native-swiper-fork "View this project on npm")
+[![npm version](http://img.shields.io/npm/dm/react-native-swiper-fork.svg?style=flat-square)](https://npmjs.org/package/react-native-swiper-fork "View this project on npm")
 
 ![logo](http://i.imgur.com/P4cRUgD.png)
 
-The best Swiper component for React Native.
+**This is a fork with all the fixes and PRs getting merged from upstream. Will be merged with upstream after original author is finally back again**
+
+> The best Swiper component for React Native.
 
 ## Feature & TODO
 
@@ -101,7 +101,7 @@ The best Swiper component for React Native.
 ### Installation
 
 ```bash
-$ npm i react-native-swiper --save
+$ npm i react-native-swiper-fork --save
 ```
 
 ### Basic Usage
@@ -121,9 +121,9 @@ $ react-native init myproject
 - Then, edit `myproject/index.ios.js`, like this:
 
 ```jsx
-var Swiper = require('react-native-swiper')
+var Swiper = require('react-native-swiper-fork')
 // es6
-// import Swiper from 'react-native-swiper'
+// import Swiper from 'react-native-swiper-fork'
 
 var React = require('react-native');
 var {

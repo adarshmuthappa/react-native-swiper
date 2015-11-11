@@ -26,11 +26,13 @@ var _reactTimerMixin = require('react-timer-mixin');
 
 var _reactTimerMixin2 = _interopRequireDefault(_reactTimerMixin);
 
-var _Dimensions = require('Dimensions');
+var _reactNativeCloneReferencedElement = require('react-native-clone-referenced-element');
 
-var _Dimensions2 = _interopRequireDefault(_Dimensions);
+var _reactNativeCloneReferencedElement2 = _interopRequireDefault(_reactNativeCloneReferencedElement);
 
-var _Dimensions$get = _Dimensions2['default'].get('window');
+var onlyChild = _reactNative2['default'].Children.only;
+
+var _Dimensions$get = _reactNative.Dimensions.get('window');
 
 /**
  * Default styles
@@ -341,7 +343,8 @@ exports['default'] = _reactNative2['default'].createClass({
 
     var dots = [];
     for (var i = 0; i < this.state.total; i++) {
-      dots.push(i === this.state.index ? this.props.activeDot || _reactNative2['default'].createElement(_reactNative.View, { style: {
+
+      dots.push(i === this.state.index ? (0, _reactNativeCloneReferencedElement2['default'])(onlyChild(this.props.activeDot), { key: i }) || _reactNative2['default'].createElement(_reactNative.View, { key: i, style: {
           backgroundColor: '#007aff',
           width: 8,
           height: 8,
@@ -350,7 +353,7 @@ exports['default'] = _reactNative2['default'].createClass({
           marginRight: 3,
           marginTop: 3,
           marginBottom: 3
-        } }) : this.props.dot || _reactNative2['default'].createElement(_reactNative.View, { style: {
+        } }) : (0, _reactNativeCloneReferencedElement2['default'])(onlyChild(this.props.dot), { key: i }) || _reactNative2['default'].createElement(_reactNative.View, { key: i, style: {
           backgroundColor: 'rgba(0,0,0,.2)',
           width: 8,
           height: 8,
