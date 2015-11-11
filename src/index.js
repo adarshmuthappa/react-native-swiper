@@ -492,6 +492,7 @@ export default React.createClass({
           {...props}
           contentContainerStyle={[styles.wrapper, props.style]}
           contentOffset={state.offset}
+          keyboardDismissMode={"on-drag"}
           onScrollBeginDrag={this.onScrollBegin}
           onMomentumScrollEnd={this.onScrollEnd}>
           {pages}
