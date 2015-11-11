@@ -14,14 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/manandmoon/react-native-swiper.git"
+    "url": "git+https://github.com/adarshmuthappa/react-native-swiper.git"
   },
-  "author": "Mike Grabowski <grabbou@gmail.com>",
+  "author": "Adarsh Muthappa <adarsh.92@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/manandmoon/react-native-swiper/issues"
+    "url": "https://github.com/adarshmuthappa/react-native-swiper/issues"
   },
-  "homepage": "https://github.com/manandmoon/react-native-swiper#readme",
+  "homepage": "https://github.com/adarshmuthappa/react-native-swiper#readme",
   "devDependencies": {
     "babel": "^5.1.11"
   },
