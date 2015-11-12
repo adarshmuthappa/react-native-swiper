@@ -518,6 +518,7 @@ exports['default'] = _reactNative2['default'].createClass({
         }, props, {
           contentContainerStyle: [styles.wrapper, props.style],
           contentOffset: state.offset,
+          keyboardShouldPersistTaps: false,
           keyboardDismissMode: "on-drag",
           onScrollBeginDrag: this.onScrollBegin,
           onMomentumScrollEnd: this.onScrollEnd }),
